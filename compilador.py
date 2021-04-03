@@ -37,6 +37,7 @@ try:
         if arquivo.endswith('.csv'):
             df = pd.read_csv(arquivo, sep=',')
             df['source'] = arquivo.replace(' - Dados Históricos.csv','')
+            df['source'] = df['source'].str.replace('.csv','')
             dfs.append(df)
 except:
     print('Erro ao incrementar todos os arquivos no DataFrame')
