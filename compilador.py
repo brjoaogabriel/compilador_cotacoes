@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+import webbrowser
 
 with open('read_me.txt', 'r') as arq:
     print(arq.read())
@@ -60,3 +61,5 @@ except:
     
 print('\a')
 input('\nAperte ENTER para finalizar a rotina...')
+
+webbrowser.open('https://www.linkedin.com/in/jo%C3%A3o-gabriel-maciel-288637163/', new=2)
